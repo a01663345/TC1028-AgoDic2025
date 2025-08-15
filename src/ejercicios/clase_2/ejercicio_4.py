@@ -11,6 +11,7 @@ UN DATO POR LÍNEA Y EN ESE ORDEN.
 Salidas:
 Un número que representa el costo mensual.
 """
+
 PRICE: float = 0.80
 n_mensajes: int = int(input())
 n_mbs: float = float(input())

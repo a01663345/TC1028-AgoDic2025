@@ -7,6 +7,7 @@ nació.
 Salida:
 El año de los 100 años.
 """
+
 age = int(input())
 current_year = int(input())
 

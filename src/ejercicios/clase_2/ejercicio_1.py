@@ -10,6 +10,7 @@ en cada renglón.
 Salidas
 Un número decimal correspondiente al promedio. Solo con 1 decimales.
 """
+
 c_1 = int(input())
 c_2 = int(input())
 c_3 = int(input())

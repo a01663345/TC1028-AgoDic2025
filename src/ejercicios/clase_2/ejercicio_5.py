@@ -14,6 +14,7 @@ Entradas:
 Salidas:
 - La hora que sera dentro de x horas (Un número de 0 a 24)
 """
+
 hora_actual = int(input())
 x_horas = int(input())
 
