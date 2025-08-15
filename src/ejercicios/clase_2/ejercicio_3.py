@@ -7,3 +7,8 @@ nació.
 Salida:
 El año de los 100 años.
 """
+age = int(input())
+current_year = int(input())
+
+result = (current_year - age) + 100
+print(f"Cumplirás 100 anios en {result}")

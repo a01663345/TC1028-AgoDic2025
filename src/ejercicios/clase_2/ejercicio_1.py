@@ -8,5 +8,12 @@ Entradas
 en cada renglón.
 
 Salidas
-Un número decimal correspondiente al promedio. Solo con 2 decimales.
+Un número decimal correspondiente al promedio. Solo con 1 decimales.
 """
+c_1 = int(input())
+c_2 = int(input())
+c_3 = int(input())
+c_4 = int(input())
+
+promedio = (c_1 + c_2 + c_3 + c_4) / 4
+print(f"Tu promedio es: {promedio: .10f}")
