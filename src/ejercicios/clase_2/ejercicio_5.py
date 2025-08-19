@@ -2,7 +2,7 @@
 Escribe un programa que:
 Dado la hora actual, sin minutos. Quieres averiguar que hora será en x horas.
 
-Por ejemplo, si actualmente son las 17 horas, y quieres sabes que hora será 
+Por ejemplo, si actualmente son las 17 horas, y quieres sabes que hora será
 dentro de 9 horas.
 
 En el caso anterior, en 9 horas serán las 02 a.m.

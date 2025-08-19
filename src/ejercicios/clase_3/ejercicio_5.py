@@ -1,7 +1,7 @@
 """
 Componentes de un vector
 
-Escribe un programa que calcule las componentes en x e y de un vector en el plano, 
+Escribe un programa que calcule las componentes en x e y de un vector en el plano,
 dada su magnitud F y su ángulo θ medido en grados desde el eje x positivo (sentido antihorario).
 
 Fx = F * cos(θ)
@@ -22,3 +22,16 @@ Ejemplo de ejecución:
 Fx=8.66
 Fy=5.00
 """
+
+import math
+
+magnitud = float(input("Magnitud: "))
+
+angle = float(input("Angle: "))
+angle = math.radians(angle)
+
+fx = magnitud * math.cos(angle)
+fy = magnitud * math.sin(angle)
+
+print(f"Fx = {fx: .2f}")
+print(f"Fy = {fy: .2f}")
