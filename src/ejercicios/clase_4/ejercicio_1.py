@@ -15,3 +15,13 @@ Ejemplo de ejecución:
 
 Ambos números son iguales
 """
+
+num_a = int(input("Num A:"))
+num_b = int(input("Num B:"))
+
+if num_a == num_b:
+    print("Ambos números son iguales")
+elif num_a > num_b:
+    print(f"{num_a} es mayor que {num_b}")
+else:
+    print(f"{num_a} es menor que {num_b}")

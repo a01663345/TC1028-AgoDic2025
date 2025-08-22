@@ -16,3 +16,16 @@ Ejemplo de ejecución:
 >>> 7.68
 8
 """
+
+import math
+
+calificacion = float(input("Calificación: "))
+trunc_c = math.trunc(calificacion)
+# 9.87 - 9 = 0.87
+decimales = calificacion - trunc_c
+if decimales == 0:
+    print(calificacion)
+elif decimales >= 0.60:
+    print(math.ceil(calificacion))
+else:
+    print(math.floor(calificacion))
