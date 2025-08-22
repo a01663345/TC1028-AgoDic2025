@@ -28,3 +28,13 @@ Output:
 144.0
 1044.0
 """
+
+n_bultos: int = int(input())
+precio_bulto: int = float(input())
+
+precio_antes_de_impuestos: float = n_bultos * precio_bulto
+impuestos: float = precio_antes_de_impuestos * 0.16
+
+print(precio_antes_de_impuestos)
+print(impuestos)
+print(precio_antes_de_impuestos + impuestos)

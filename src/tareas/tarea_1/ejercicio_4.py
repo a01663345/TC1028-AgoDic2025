@@ -19,3 +19,10 @@ Ejemplo de ejecución:
 Salida
 15
 """
+
+MAX_VALUE = 99999 + 1
+
+lectura_actual: int = int(input("Lectura Actual: "))
+lectura_actual += int(input("Distancia Viajada: "))
+
+print(lectura_actual % MAX_VALUE)

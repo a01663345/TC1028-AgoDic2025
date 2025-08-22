@@ -18,3 +18,9 @@ Ejemplo de ejecución del programa:
 Output:
 95.28
 """
+
+num_mensajes: int = int(input())
+num_megas: float = float(input())
+num_minutos: int = int(input())
+
+print((num_mensajes + num_megas + num_minutos) * 0.80)

@@ -15,3 +15,10 @@ Ejemplo de ejecución:
 Salida
 34.2
 """
+
+VELOCIDAD = 5.7
+
+minutos_en_segundos = int(input()) * 60
+distancia_en_milimetros = 5.7 * minutos_en_segundos
+
+print(distancia_en_milimetros / 10)
