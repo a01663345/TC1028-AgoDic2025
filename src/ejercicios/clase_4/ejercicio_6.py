@@ -3,7 +3,7 @@ Calcula el IMC (peso / (est ** 2))
 
 Entradas:
 El peso en kg
-La estatura en metros
+La estatura en metros 
 
 Salidas:
 - Si peso menor a 18.5 => Bajo Peso
