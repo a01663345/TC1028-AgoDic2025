@@ -42,3 +42,34 @@ Ejemplo de Ejecución:
 
 -1
 """
+
+
+def conversion(cantidad: float, unidad_origen: str, unidad_destino: str) -> float:
+    if unidad_origen == "kg" and unidad_destino == "lb":
+        return cantidad * 2.2
+
+    if unidad_origen == "lb" and unidad_destino == "kg":
+        return cantidad / 2.2
+
+    if unidad_origen == "km" and unidad_destino == "mi":
+        return cantidad * 0.62
+
+    if unidad_origen == "mi" and unidad_destino == "km":
+        return cantidad * 1.61
+
+    return -1
+
+
+def main():
+    c: float = float(input("Cantidad: "))
+    unidad_origen: str = input("Unidad origen: ")
+    unidad_destino: str = input("Unidad destino: ")
+    resultado = conversion(
+        unidad_origen=unidad_origen, unidad_destino=unidad_destino, cantidad=c
+    )
+
+    print(resultado)
+
+
+if __name__ == "__main__":
+    main()
