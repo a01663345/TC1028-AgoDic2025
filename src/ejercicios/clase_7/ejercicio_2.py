@@ -11,3 +11,25 @@ indicando que el número no será sumado y continuar pidiendo el siguiente.
 El programa debe mostrar al final la suma total y la cantidad de números que
 fueron considerados en la suma.
 """
+
+
+def main():
+    suma_total = 0
+    contador = 0
+
+    while True:
+        entrada = input("Dame un Número: ")
+        if entrada == "fin":
+            break
+
+        entrada = int(entrada)
+        if entrada < 0:
+            continue
+
+        suma_total += entrada
+        contador += 1
+
+    print(suma_total, contador)
+
+
+main()
