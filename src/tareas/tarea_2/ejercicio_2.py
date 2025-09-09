@@ -13,3 +13,32 @@ Reglas de Impuestos:
 - Ingresos mayores a $100,000: Tasa del 30% sobre la parte del ingreso que supera
     los $100,000, más los impuestos totales de los tramos anteriores.
 """
+
+
+def calcula_impuesto(ingreso_anual: float) -> float:
+    if ingreso_anual < 0:
+        raise ValueError("Valor inválido")
+
+    impuesto = 0.0
+    base_15 = min(ingreso_anual, 50_000) - 10_000
+    if base_15 > 0:
+        impuesto += base_15 * 0.15
+
+    base_20 = min(ingreso_anual, 100_000) - 50_000
+    if base_20 > 0:
+        impuesto += base_20 * 0.20
+
+    base_30 = ingreso_anual - 100_000
+    if base_30 > 0:
+        impuesto += base_30 * 0.30
+
+    return impuesto
+
+
+def main():
+    ingreso = float(input())
+    print(calcula_impuesto(ingreso_anual=ingreso))
+
+
+if __name__ == "__main__":
+    main()

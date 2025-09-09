@@ -30,3 +30,35 @@ Hint:
     - Si fuera de 22 elementos, tus indices van de 0 a 21.
     - ¿Crees que esto sea últil para resolver el problema?
 """
+
+import random
+
+
+def generate_board() -> list[int]:
+    map = [False] * 100
+    count = 0
+    while count < 25:
+        number = random.randint(1, 99)
+        if not map[number - 1]:
+            map[number - 1] = True
+            count += 1
+
+    return [idx + 1 for idx, val in enumerate(map) if val == True]
+
+
+def print_board(items: list[int]) -> None:
+    for i in range(5):
+        row = []
+        for j in range(5):
+            item_index = i * 5 + j
+            row.append(str(items[item_index]))
+
+        print(", ".join(row))
+
+
+def main():
+    print_board(items=generate_board())
+
+
+if __name__ == "__main__":
+    main()
